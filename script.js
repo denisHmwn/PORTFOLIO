@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- Inisialisasi Typed.js ---
         const typed = new Typed('#typed-text', {
-            strings: ['Software Engineer', 'Web Developer', 'UI/UX Enthusiast'],
+            strings: ['Network Engineer', 'Network Technician', 'Field Engineer'],
             typeSpeed: 75,
             backSpeed: 50,
             backDelay: 2000,
