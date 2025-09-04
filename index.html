@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definitive Portfolio - Deni Hermawan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="welcome-line">Welcome To My</span>
+                <span class="portfolio-line">Portfolio Website</span>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar"><div class="progress"></div></div>
+                <div class="progress-percentage">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <nav>
+                <div class="logo">[DH]<span>.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#hero" data-section="hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" data-section="about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" data-section="portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" data-section="contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="tsparticles"></div>
+            <section id="hero" class="main-section">
+                <div class="hero-content">
+                    <p class="intro anim-text">Hello, my name is</p>
+                    <h1 class="name anim-heading">Deni Hermawan</h1>
+                    <p class="subtitle">I am a <span id="typed-text"></span></p>
+                    <p class="description anim-text">
+                        I build (and occasionally design) exceptional digital experiences for the modern web, turning complex problems into elegant software solutions.
+                    </p>
+                    <a href="#about" class="cta-button">Discover More</a>
+                </div>
+                  <div class="about-lottie anim-up">
+                    <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+                </div>
+            </section>
+
+            <section id="about" class="main-section">
+                <div class="about-background"></div>
+                <h2 class="section-title anim-up">About Me</h2>
+                <div class="about-container">
+                    <div class="about-text anim-up">
+                        <h3>I build things for the web.</h3>
+                        <p>I'm a passionate developer based in [Your City], specializing in creating modern, responsive, and user-friendly web applications. With a strong foundation in front-end and back-end technologies, I thrive on turning complex problems into elegant, simple solutions.</p>
+                        <div class="about-buttons">
+                            <a href="cv.pdf" target="_blank" rel="noopener noreferrer" class="cv-button">
+                                Open CV <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#portfolio" class="project-button">
+                                View Projects <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-image-container anim-up">
+                        <img src="./images/deni.jpg" alt="Foto Profil Deni Hermawan">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="portfolio" class="main-section">
+                <h2 class="section-title anim-up">Portfolio Showcase</h2>
+                <p class="portfolio-subtitle anim-up">Here are some of my favorite pieces. Feel free to explore the different sections for more information.</p>
+                
+                <div class="showcase-wrapper anim-up">
+                    <div class="tabs-container">
+                        <button class="tab-button active" data-tab="tab-projects">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Projects</span>
+                        </button>
+                        <button class="tab-button" data-tab="tab-certificates">
+                            <i class="fas fa-award"></i>
+                            <span>Certificates</span>
+                        </button>
+                        <button class="tab-button" data-tab="tab-skills">
+                            <i class="fas fa-cogs"></i>
+                            <span>Skills</span>
+                        </button>
+                    </div>
+
+                    <div class="tab-content-container">
+                        <div id="tab-projects" class="tab-content active">
+                            <h3 class="anim-heading">Featured Projects</h3>
+                            <div class="project-gallery">
+                                <div class="project-card">
+                                    <img src="./images/Portfolio 1.jpg" alt="Proyek 1">
+                                    <div class="project-overlay">
+                                        <h3>Fortinet Firewall Implementation</h3>
+                                        <p>This project focused on enhancing core network security by deploying a high-performance Fortinet firewall.</p>
+                                    </div>
+                                </div>
+                                <div class="project-card">
+                                    <img src="https://placehold.co/500x300/1E2D3D/FFFFFF?text=Project+2" alt="Project 2">
+                                    <div class="project-overlay">
+                                        <h3>Project Title 2</h3>
+                                        <p>A brief description of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="tab-certificates" class="tab-content">
+                            <h3 class="anim-heading">My Certificates</h3>
+                            <div class="certificate-grid">
+                                <div class="certificate-item-new">
+                                    <a href="./images/sertifikat-bri.png" target="_blank" title="Lihat Sertifikat">
+                                        <img src="./images/sertifikat-bri.png" alt="Sertifikat BRI">
+                                    </a>
+                                </div>
+                                <div class="certificate-item-new">
+                                    <a href="./images/sertifikat-front end.png" target="_blank" title="Lihat Sertifikat">
+                                        <img src="./images/sertifikat-front end.png" alt="sertifikat front End">
+                                    </a>
+                                </div>
+                                <div class="certificate-item-new">
+                                    <a href="./images/sertifikat-Peserta Zenith Academy.jpg" target="_blank" title="Lihat Sertifikat">
+                                        <img src="./images/sertifikat-Peserta Zenith Academy.jpg" alt="sertifikat Peserta Zenith Academy">
+                                    </a>
+                                </div>
+                                <div class="certificate-item-new">
+                                    <a href="#" target="_blank" title="Lihat Sertifikat">
+                                        <img src="https://placehold.co/800x600/112240/FFFFFF?text=Sertifikat+4" alt="Sertifikat 4">
+                                    </a>
+                                </div>
+                                <div class="certificate-item-new">
+                                    <a href="#" target="_blank" title="Lihat Sertifikat">
+                                        <img src="https://placehold.co/800x600/112240/FFFFFF?text=Sertifikat+5" alt="Sertifikat 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab-skills" class="tab-content">
+                            <h3 class="anim-heading">Technologies I Use</h3>
+                            <div class="skills-container">
+                                <div class="skill-item"><i class="fab fa-html5"></i><span>HTML</span><span class="tooltip-text">The standard markup language for web pages.</span></div>
+                                <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span><span class="tooltip-text">For styling and designing web pages.</span></div>
+                                <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span><span class="tooltip-text">The core language of the web (ES6+).</span></div>
+                                <div class="skill-item"><i class="fab fa-python"></i><span>Python</span><span class="tooltip-text">For backend development and scripting.</span></div>
+                                <div class="skill-item"><i class="fab fa-node-js"></i><span>Node.js</span><span class="tooltip-text">For fast server-side applications.</span></div>
+                                <div class="skill-item"><i class="fab fa-sass"></i><span>SASS</span><span class="tooltip-text">A CSS preprocessor for powerful styling.</span></div>
+                                <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span><span class="tooltip-text">For version control and collaboration.</span></div>
+                                <div class="skill-item"><i class="fab fa-ubuntu"></i><span>WSL (Ubuntu)</span><span class="tooltip-text">For a Linux development environment on Windows.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="contact" class="main-section">
+                <h2 class="section-title anim-up">Get In Touch</h2>
+                <p class="anim-up">My inbox is always open. Whether you have a question or just want to say hi, I’ll get back to you!</p>
+                <div class="contact-icons">
+                     <a href="mailto:[denihermawannn5@gmail.com]" aria-label="Email" class="contact-link anim-up"><i class="fas fa-envelope"></i><span class="tooltip-text">Send me an Email</span></a>
+                     <a href="https://wa.me/083895199681" target="_blank" aria-label="WhatsApp" class="contact-link anim-up"><i class="fab fa-whatsapp"></i><span class="tooltip-text">Chat on WhatsApp</span></a>
+                     <a href="https://linkedin.com/Deni Hermawan" target="_blank" aria-label="LinkedIn" class="contact-link anim-up"><i class="fab fa-linkedin"></i><span class="tooltip-text">Connect on LinkedIn</span></a>
+                     <a href="https://github.com/denisHmwn" target="_blank" aria-label="GitHub" class="contact-link anim-up"><i class="fab fa-github"></i><span class="tooltip-text">View my code on GitHub</span></a>
+                     <a href="https://instagram.com/denn_hmwn" target="_blank" aria-label="Instagram" class="contact-link anim-up"><i class="fab fa-instagram"></i><span class="tooltip-text">Follow me on Instagram</span></a>
+                </div>
+            </section>
+        </main>
+        <footer><p>Designed & Built by [Deni] &copy; 2025</p></footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
