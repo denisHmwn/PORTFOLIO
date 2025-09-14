@@ -31,6 +31,7 @@ body { font-family: var(--font-primary); background-color: var(--background-colo
     flex-direction: column;
     align-items: center;
     line-height: 1.2;
+    text-align: center;
 }
 .preloader-logo .welcome-line {
     font-size: 2.5rem;
@@ -134,7 +135,12 @@ section {
     color: var(--text-color-dark); 
     text-align: justify;
     line-height: 1.7; 
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
+    
+     /* --- TAMBAHKAN KODE DI BAWAH INI --- */
+    -webkit-hyphens: auto; /* Untuk browser lama */
+    -ms-hyphens: auto;    /* Untuk Microsoft */
+    hyphens: auto;        /* Standar */
 }
 .about-buttons { display: flex; gap: 1rem; align-items: center; }
 
